@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Text Summarizer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>⚡ Smart Text Summarizer</h1>
+        <form method="POST" action="/summer">
+            <textarea name="data" placeholder="Paste your text here..."></textarea>
+            <br>
+            <label>Summary Length:</label>
+            <input type="number" name="maxl" value="100" min="20" max="200">
+            <br>
+            <button type="submit">Summarize</button>
+        </form>
+        <h2>Summary Result:</h2>
+        <p>{{ result }}</p>
+    </div>
+</body>
+</html>
