@@ -1,38 +1,91 @@
 body {
-    font-family: Arial, sans-serif;
     background-color: #121212;
     color: #f8f9fa;
-    text-align: center;
-    padding: 20px;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
-.container {
-    max-width: 600px;
-    margin: auto;
-    background: #1e1e1e;
-    padding: 20px;
+.card {
+    background-color: #1e1e1e;
+    padding: 25px;
     border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+    max-width: 650px;
+    width: 90%;
+    text-align: center;
+}
+
+h1 {
+    color: #4361ee;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #aaa;
+    margin-bottom: 20px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.feature-box {
+    background: #2a2a2a;
+    padding: 10px;
+    border-radius: 8px;
+    width: 30%;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #ccc;
 }
 
 textarea {
     width: 100%;
-    height: 150px;
+    height: 120px;
     border-radius: 8px;
+    border: 1px solid #444;
+    background: #2a2a2a;
+    color: #f8f9fa;
     padding: 10px;
+    font-size: 14px;
     margin-top: 10px;
 }
 
-button {
+.slider-container {
+    margin: 15px 0;
+    font-size: 14px;
+}
+
+.btn {
     background: #4361ee;
-    color: white;
     border: none;
-    padding: 10px 20px;
-    margin-top: 10px;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 8px;
     cursor: pointer;
-    border-radius: 6px;
+    transition: background 0.3s ease;
 }
 
-button:hover {
+.btn:hover {
     background: #3a0ca3;
+}
+
+.result-box {
+    background: #2a2a2a;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+    min-height: 50px;
+    text-align: left;
+    font-size: 14px;
+    color: #ddd;
+    white-space: pre-wrap;
 }

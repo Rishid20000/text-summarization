@@ -6,18 +6,30 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <div class="container">
-        <h1>⚡ Smart Text Summarizer</h1>
+    <div class="card">
+        <h1>🤖 Smart Text Summarizer</h1>
+        <p class="subtitle">Transform long text into concise, meaningful summaries with AI</p>
+
+        <div class="features">
+            <div class="feature-box">⚡<br><b>Quick Summary</b><br><span>Get instant results</span></div>
+            <div class="feature-box">🤖<br><b>AI-Powered</b><br><span>Smart processing</span></div>
+            <div class="feature-box">⚙️<br><b>Customizable</b><br><span>Adjust length</span></div>
+        </div>
+
         <form method="POST" action="/summer">
-            <textarea name="data" placeholder="Paste your text here..."></textarea>
+            <textarea name="data" placeholder="Paste your text here to summarize..."></textarea>
             <br>
-            <label>Summary Length:</label>
-            <input type="number" name="maxl" value="100" min="20" max="200">
+            <div class="slider-container">
+                <label>Summary Length: </label>
+                <input type="number" name="maxl" value="100" min="20" max="200">
+                <span>words</span>
+            </div>
             <br>
-            <button type="submit">Summarize</button>
+            <button type="submit" class="btn">🔮 Summarize Text</button>
         </form>
+
         <h2>Summary Result:</h2>
-        <p>{{ result }}</p>
+        <div class="result-box">{{ result }}</div>
     </div>
 </body>
 </html>
