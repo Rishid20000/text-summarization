@@ -1,6 +1,6 @@
 📝 Smart Text Summarizer
 
-🌐 Live Demo → Smart Text Summarizer on Render
+🌐 Live Demo → [Smart Text Summarizer on Render](https://text-summarization-dgfr.onrender.com/)
 
 Smart Text Summarizer is a Flask-based web application that transforms long text into concise, meaningful summaries using AI-powered Hugging Face models. The app provides a clean, responsive UI and supports customizable summary lengths, making it ideal for students, researchers, writers, and anyone who needs quick summaries from large text blocks.
 
@@ -141,3 +141,4 @@ Commit changes
 Push to branch
 
 Open a Pull Request
+
